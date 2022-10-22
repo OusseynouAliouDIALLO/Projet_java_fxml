@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="751.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ism.gestion.controllers.AffecterProfesseurController">
+   <children>
+      <BorderPane prefHeight="601.0" prefWidth="751.0" stylesheets="@../styles/Style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #3B240B;" BorderPane.alignment="CENTER">
+               <children>
+                  <Text fill="#9e4c04" layoutX="206.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Affecter classe à un Professeur" wrappingWidth="372.13671875">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                  </Text>
+                  <Label layoutX="79.0" layoutY="142.0" text="Prenom &amp; Nom">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtNomComplet" layoutX="320.0" layoutY="140.0" prefHeight="32.0" prefWidth="241.0" />
+                  <Label layoutX="79.0" layoutY="337.0" text="Grade">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtGrade" layoutX="320.0" layoutY="334.0" prefHeight="32.0" prefWidth="241.0" />
+                  <Label layoutX="78.0" layoutY="245.0" text="Classe">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtClasse" layoutX="320.0" layoutY="240.0" prefHeight="32.0" prefWidth="241.0" />
+                  <Button layoutX="508.0" layoutY="473.0" mnemonicParsing="false" onAction="#handleAffecterProfesseur" prefHeight="46.0" prefWidth="171.0" text="Enregistrer">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Button>
+                  <Button layoutX="259.0" layoutY="488.0" mnemonicParsing="false" onAction="#handleGoBack" prefHeight="29.0" prefWidth="87.0" text="Retour" />
+                  <Text fx:id="lblErrorProfesseur" fill="RED" layoutX="336.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Le professeur n'existe pas ">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="lblErrorClasse" fill="RED" layoutX="346.0" layoutY="303.0" strokeType="OUTSIDE" strokeWidth="0.0" text="La classe n'existe pas ">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
